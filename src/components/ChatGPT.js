@@ -27,7 +27,7 @@ const ChatGPT = () => {
 
       try {
         const res = await axios.post(
-          "http://localhost:8080/auth/verifyToken",
+          "https://0d8a-14-241-224-21.ngrok-free.app/auth/verifyToken",
           { token },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -66,7 +66,7 @@ const ChatGPT = () => {
   const updateProfile = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8080/auth/updateProfile",
+        "https://0d8a-14-241-224-21.ngrok-free.app/auth/updateProfile",
         {
           userId,
           username: profile.username,
