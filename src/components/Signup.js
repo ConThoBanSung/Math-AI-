@@ -12,7 +12,7 @@ const Signup = () => {
     try {
       const signupData = { email, password };
       const res = await axios.post(
-        "http://localhost:8080/auth/signup",
+        "https://0d8a-14-241-224-21.ngrok-free.app/auth/signup",
         signupData,
         {
           headers: { "Content-Type": "application/json" },
