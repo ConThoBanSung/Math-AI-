@@ -54,7 +54,7 @@ const ChatGPT = () => {
       const payload = { userId, chatId, messages: filteredMessages };
 
       await axios.post(
-        "http://localhost:8080/auth/saveChat",
+        "https://0d8a-14-241-224-21.ngrok-free.app/auth/saveChat",
         payload,
         { headers: { Authorization: `Bearer ${token}` }, withCredentials: true }
       );
