@@ -100,7 +100,7 @@ const ChatGPT = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/generate",
+        "https://0d8a-14-241-224-21.ngrok-free.app/generate",
         { prompt: input },
         {
           headers: {
