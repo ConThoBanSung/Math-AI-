@@ -27,7 +27,7 @@ const ChatGPT = () => {
 
       try {
         const res = await axios.post(
-          "https://0d8a-14-241-224-21.ngrok-free.app/auth/verifyToken",
+          "https://a934-2402-800-63b6-a5b1-6c7f-b5d1-b4a7-2317.ngrok-free.app/auth/verifyToken",
           { token },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -54,7 +54,7 @@ const ChatGPT = () => {
       const payload = { userId, chatId, messages: filteredMessages };
 
       await axios.post(
-        "https://0d8a-14-241-224-21.ngrok-free.app/auth/saveChat",
+        "https://a934-2402-800-63b6-a5b1-6c7f-b5d1-b4a7-2317.ngrok-free.app/auth/saveChat",
         payload,
         { headers: { Authorization: `Bearer ${token}` }, withCredentials: true }
       );
@@ -66,7 +66,7 @@ const ChatGPT = () => {
   const updateProfile = async () => {
     try {
       const response = await axios.post(
-        "https://0d8a-14-241-224-21.ngrok-free.app/auth/updateProfile",
+        "https://a934-2402-800-63b6-a5b1-6c7f-b5d1-b4a7-2317.ngrok-free.app/auth/updateProfile",
         {
           userId,
           username: profile.username,
@@ -100,7 +100,7 @@ const ChatGPT = () => {
 
     try {
       const res = await axios.post(
-        "https://0d8a-14-241-224-21.ngrok-free.app/generate",
+        "https://a934-2402-800-63b6-a5b1-6c7f-b5d1-b4a7-2317.ngrok-free.app/generate",
         { prompt: input },
         {
           headers: {
